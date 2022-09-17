@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body:not(code){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVIGATION BAR & TITLE */
+#title-div{
+    /* background-color: purple; */
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#navbar {
+    /* background-color: rgb(240, 235, 235); */
+    display: grid;
+    max-height: 200px;
+    overflow: auto;
+    padding: 0;
+    margin: -8px;
+    border: 1px solid gray;
+    border-bottom: 3px solid gray;
+}
+
+#navbar a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0.7rem 1.5rem;
+    border-top: 1px solid gray;
+    font-size: 18px;
+    color: rgb(100, 98, 98);
+}
+
+/* MAIN-DOC */
+
+figure {
+    text-align: center;
+}
+
+#main-doc {
+    padding: 0 1rem;
+    margin-top: 1em;
+}
+
+li{
+    margin-bottom: 0.5rem;
+}
+
+img {
+    display: block;
+    max-height: 350px;
+    margin: 0px auto;
+}
+
+.code {
+    background-color: rgb(238, 235, 232);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* FOR PC AND LAPTOPS */
+
+@media only screen and (min-width: 800px) {
+    /* NAVIGATION BAR & TITLE */
+    #title-div{
+        position: fixed;
+        text-align: center;
+        top: 0%;
+        left: 0%;
+        width: 262px;
+        padding-top: 0.1rem;
+    }
+
+    #navbar {
+        all: unset;
+        position: fixed;
+        width: 260px;
+        height: 100%;
+        left: 0%;
+        margin-top: 3.5rem;
+    }
+
+    #navbar,
+    #title-div {
+        /* background-color: rgb(240, 235, 235); */
+        border-right: 2px solid gray;
+    }
+
+    #navbar a {
+        display: block;
+        width: 100%;
+        padding: 0.8rem;
+        padding-left: 1.5rem;
+    }
+    
+    /* MAIN-DOC */
+    #main-doc {
+        margin-left: 260px;
+    }
+
+    .code {
+        margin: unset;
+        max-width: 100%;
+    }
+
+    img{
+        max-height: 550px;
+    }
+
+    ul{
+        margin-left: 1rem;
+    }
+}

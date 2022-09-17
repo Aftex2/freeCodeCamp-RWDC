@@ -1,0 +1,115 @@
+
+#main-background {
+  margin: 2em auto;
+  width: 99%;
+  background-color: #99929231;
+  border-radius: 5px;
+}
+
+main {
+  overflow: auto;
+}
+
+/* TITLE */
+
+#title {
+  margin: 0 auto;
+  padding: 1.5em 0;
+  text-align: center;
+  /* background-color: aqua; */
+}
+
+/* FONT */
+
+body {
+  font-family: sans-serif;
+}
+
+#title > h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h1, 
+h2 {
+  letter-spacing: 0.7px;
+}
+
+h2 {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 16px;
+  text-align: center;
+  min-width: 400px;
+}
+
+p, 
+figcaption, 
+li {
+  color: #333;
+}
+
+figcaption {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.year {
+  font-weight: bold;
+}
+
+.quote {
+  font-style: italic;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* FIGURES */
+
+#img-div {
+  padding: 5px;
+  width: 97%;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: -1rem;
+  background-color: white;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* LIST */
+
+.chronicle {
+  /* background-color: rgb(132, 230, 132); */
+  margin: 0 auto;
+  width: 50%;
+  max-width: 600px;
+  min-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  text-align: left;
+  list-style-position: outside;
+  padding-left: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+/* LINK */
+.link-text {
+  padding: 1rem;
+  padding-top: 0px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form | freeCodeCamp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking time to help us improve!</p>
+        </header>
+        <form id="survey-form">
+            <fieldset id="info-field">
+                <label id="name-label">Name
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required></input>
+                </label>
+                <label id="email-label">Email
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required></input>
+                </label>
+                <label id="number-label">Age <span class="optional-text">(optional)</span>
+                    <input type="number" name="number" id="number" min="0" max="125" placeholder="Age"></input>
+                </label>
+                <label>Which option best describes your current role?
+                    <select id="dropdown" required>
+                        <option value="" disabled selected><span class="placeholder-text">Select your current role</span></option>
+                        <option value="student">Student</option>
+                        <option value="full-time-job">Full Time Job</option>
+                        <option value="hobbyist">Hobbyist</option>
+                        <option value="secret">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                Would you recommend freeCodeCamp to a friend?
+                <div class="div-selection">
+                    <label>
+                        <input type="radio" class="inline-selection" name="recommend-opt" value="definitely" checked>Definitely</input>
+                    </label>
+                    <label>
+                        <input type="radio" class="inline-selection" name="recommend-opt" value="maybe">Maybe</input>
+                    </label>
+                    <label>
+                        <input type="radio" class="inline-selection" name="recommend-opt" value="never">Never</input>
+                    </label>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                What would you like to see improved? (Select all that apply)
+                <div class="div-selection">
+                    <label>
+                        <input type="checkbox" class="inline-selection" value="fe-course">Front-end course</input>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="inline-selection" value="be-course">Back-end course</input>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="inline-selection" value="videos">Videos</input>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="inline-selection" value="chalenges">Challenges</input>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="inline-selection" value="forum">Forum</input>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                Any comments or suggestions?
+                <div class="div-selection">
+                    <textarea placeholder="Enter your comment here..." rows="7"></textarea>
+                </div>
+            </fieldset>
+            <fieldset><input id="submit" type="submit" value="Submit"></input></fieldset>
+        </form>
+    </body>
+</html>
