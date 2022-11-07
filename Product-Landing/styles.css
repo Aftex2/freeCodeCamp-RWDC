@@ -276,6 +276,39 @@ form {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 670px) {
+    #pricing {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        row-gap: 1.5rem;
+    }
+
+    .product-listing {
+        height: 270px;
+    }
+
+    .product-name {
+        font-size: 1.6rem;
+        height: 50px;
+    }
+
+    .product-price {
+        font-size: 1.9rem;
+        margin-bottom: 0px;
+        height: 50px;
+    }
+
+    .product-description {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .product-select {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
 /* Footer */
 
 footer {
