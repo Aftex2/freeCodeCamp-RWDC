@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --main-background-color: rgba(29, 35, 43, 0.925);
+    --red-accent: rgb(185,51,69);
+}
+
+/* Navigation bar */
+
+
+#navbar {
+    background-color: var(--red-accent);
+    position: fixed;
+    height: 4.5em;
+    width: 100%;
+    box-shadow: 0 1px 1px black;
+}
+
+/* Welcome section */
+
+#welcome {
+    background: linear-gradient(65deg, var(--main-background-color), rgb(27, 25, 25));
+    height: 100vh;
+}
+
+#projects {
+    background-color: #45567d;
+    height: 1400px;
+}
+
+#contact {
+    background-color: var(--main-background-color);
+    height:80vh;
+}
+
+footer {
+    background-color: var(--main-background-color);
+    height: 110px;
+    border-top: 4px solid var(--red-accent);
+}
