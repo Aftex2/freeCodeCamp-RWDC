@@ -11,17 +11,37 @@ html {
 :root {
     --main-background-color: rgb(62, 65, 70);
     --red-accent: rgb(185,51,69);
+    --blue-accent: #45567d;
+    --white-text: white;
 }
 
 /* Navigation bar */
 
 #navbar {
     background-color: var(--red-accent);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: fixed;
     height: 4.4em;
     width: 100%;
-    box-shadow: 0 1px 1px rgb(19, 19, 19);
+    box-shadow: 0 1px 2px rgb(19, 19, 19);
     z-index: 1;
+}
+
+.nav-links {
+    color: var(--white-text);
+    font-size: 22px;
+    text-decoration: none;
+    padding: 1em 0.9em;
+}
+
+.nav-links:hover {
+    background-color: var(--blue-accent);
+}
+
+.nav-links:last-of-type {
+    margin-right: 1em;
 }
 
 /* Welcome section */
@@ -30,7 +50,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(62deg, var(--main-background-color), rgb(22, 22, 22));
+    background: linear-gradient(60deg, var(--main-background-color), rgb(22, 22, 22));
     height: 100vh;
     text-align: center;
 }
@@ -38,7 +58,7 @@ html {
 #welcome h1 {
     font-size: 62px;
     margin: 0.5rem;
-    color: white;
+    color: var(--white-text);
 }
 
 #welcome p {
@@ -50,7 +70,7 @@ html {
 /* Project section */
 
 #projects {
-    background-color: #45567d;
+    background-color: var(--blue-accent);
     height: 1400px;
 }
 
