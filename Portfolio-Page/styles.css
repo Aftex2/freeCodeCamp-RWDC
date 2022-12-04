@@ -177,6 +177,7 @@ html {
     color: var(--white-text);
     font-size: 26px;
     margin: 0 1rem;
+    text-shadow: 2px 2px black;
 }
 
 .contact-texts a:hover {
@@ -189,4 +190,17 @@ footer {
     background-color: var(--main-background-color);
     height: 110px;
     border-top: 4px solid var(--red-accent);
+    padding: 2.5rem;
+    text-align: right;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: var(--white-text);
+    display: inline;
+}
+
+.disclaimer {
+    position: absolute;
+    left: 20px;
 }
