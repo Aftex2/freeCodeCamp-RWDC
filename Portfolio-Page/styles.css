@@ -144,6 +144,22 @@ html {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 720px) {
+
+    #projects {
+        height: 2500px;
+    }
+
+    .projects-heading {
+        text-align: center;
+        line-height: 0px;
+    }
+
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 /*Contact section */
 
 #contact {
@@ -155,7 +171,7 @@ html {
 }
 
 .contact-texts {
-    width: 500px;
+    max-width: 500px;
     color: var(--white-text);
     margin: 0 auto;
     text-align: center;
@@ -203,4 +219,18 @@ footer {
 .disclaimer {
     position: absolute;
     left: 20px;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .footer-text {
+        display: block;
+        text-align: center;
+    }
+
+    .disclaimer {
+        position: unset;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
 }
