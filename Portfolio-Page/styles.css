@@ -44,6 +44,16 @@ html {
     margin-right: 1em;
 }
 
+@media only screen and (max-width: 720px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    .nav-links:last-of-type {
+        margin-right: unset;
+    }
+}
+
 /* Welcome section */
 
 #welcome-section {
